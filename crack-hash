@@ -1,0 +1,58 @@
+#!/bin/sh
+
+
+R=$( tput setaf 1 )
+G=$( tput setaf 2 )
+
+while true; do
+clear
+echo " "
+echo $G"enter hash source file path below"
+echo " "
+read -p "file: $R" user_path
+echo " "
+echo $G"enter password length below (4-12)"
+echo " "
+read -p "length: $R" user_l
+echo $G" "
+if [ $user_l == x ]
+then
+  break
+fi
+if [ $user_l == 4 ]
+then
+  hashcat -m 5600 $user_path -o cracked.txt -a 3 ?l?l?l?l
+fi
+if [ $user_l == 5 ]
+then
+  hashcat -m 5600 $user_path -o cracked.txt -a 3 ?l?l?l?l?l
+fi
+if [ $user_l == 6 ]
+then
+  hashcat -m 5600 $user_path -o cracked.txt -a 3 ?l?l?l?l?l?l
+fi
+if [ $user_l == 7 ]
+then
+  hashcat -m 5600 $user_path -o cracked.txt -a 3 ?l?l?l?l?l?l?l
+fi
+if [ $user_l == 8 ]
+then
+  hashcat -m 5600 $user_path -o cracked.txt -a 3 ?l?l?l?l?l?l?l?l
+fi
+if [ $user_l == 9 ]
+then
+  hashcat -m 5600 $user_path -o cracked.txt -a 3 ?l?l?l?l?l?l?l?l?l
+fi
+if [ $user_l == 10 ]
+then
+  hashcat -m 5600 $user_path -o cracked.txt -a 3 ?l?l?l?l?l?l?l?l?l?l
+fi
+if [ $user_l == 11 ]
+then
+  hashcat -m 5600 $user_path -o cracked.txt -a 3 ?l?l?l?l?l?l?l?l?l?l?l
+fi
+if [ $user_l == 12 ]
+then
+  hashcat -m 5600 $user_path -o cracked.txt -a 3 ?l?l?l?l?l?l?l?l?l?l?l?l
+fi
+done
