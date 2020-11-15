@@ -1,0 +1,15 @@
+#!/bin/sh
+clear
+echo " "
+echo "https://github.com/nickbriggs501/master"
+echo "   installer for my termux system"
+echo "   nano project"
+echo "https://github.com/nickbriggs501/wifi"
+echo "   automated wifi scripts"
+echo "https://github.com/nickbriggs501/whash"
+echo "   automated windows hash cracking"
+echo "https://github.com/nickbriggs501/scriptlets"
+echo "   ran-dumb scriptlets"
+echo "https://github.com/nickbriggs501/ssh"
+echo "   external ssh scripts"
+echo " "
