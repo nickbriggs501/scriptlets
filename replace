@@ -1,0 +1,16 @@
+#!/bin/sh
+clear
+echo $G" "
+echo "this script will replace words in a file"
+echo " "
+read -p "file to edit: $R" user_edit
+echo " "
+read -p $G"find and replace: $R" search
+echo " "
+read -p $G"replace with: $R" replace
+echo $G" "
+if [[ $search != "" && $replace != "" ]]; then
+sed -i "s/$search/$replace/" $user_edit
+echo " "
+echo "done"
+
